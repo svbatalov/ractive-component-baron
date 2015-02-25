@@ -1,0 +1,80 @@
+.scroller_wrapper {
+	position: relative;
+	overflow: hidden;
+}
+.scroller {
+	height: 100%;
+	overflow-y: scroll;
+	/*-webkit-overflow-scrolling: touch;*/
+	/* uncomment to accelerate scrolling on iOs */
+}
+[class^="baron"] .scroller::-webkit-scrollbar {
+	width: 0;
+}
+.scroller__track_v {
+	display: none;
+	position: absolute;
+	z-index: 3;
+	top: 20px;
+	bottom: 20px;
+	right: 5px;
+	width: 8px;
+	border-radius: 5px;
+	background: #ddf;
+	background: rgba(0, 0, 255, .1);
+	pointer-events: none;
+}
+.scroller__track_h {
+	display: none;
+	position: absolute;
+	z-index: 3;
+	left: 20px;
+	right: 20px;
+	bottom: 5px;
+	height: 8px;
+	border-radius: 5px;
+	background: #ddf;
+	background: rgba(0, 0, 255, .1);
+	pointer-events: none;
+}
+.baron .scroller__track_v {
+	display: block;
+}
+
+.baron_h .scroller__track_h {
+	display: block;
+}
+
+.scroller__bar_v {
+	position: absolute;
+	z-index: 1;
+	width: 8px;
+	border-radius: 3px;
+	background: #987; 
+	opacity: 0.5;
+	-webkit-transition: opacity .2s linear;
+	transition: opacity .2s linear;
+	pointer-events: auto;
+}
+
+.scroller__bar_h {
+	position: absolute;
+	z-index: 1;
+	height: 8px;
+	border-radius: 3px;
+	background: #987; 
+	opacity: 0.5;
+	-webkit-transition: opacity .2s linear;
+	transition: opacity .2s linear;
+	pointer-events: auto;
+}
+
+.baron .scroller__bar {
+	opacity: .5;
+}
+[class^="scroller__bar"]:hover {
+	opacity: 0.8;
+}
+.baron_h .scroller__bar_h {
+	opacity: .6;
+}
