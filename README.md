@@ -2,7 +2,8 @@
 Ractive component wrapping [Baron.js](https://github.com/Diokuz/baron) scroller library.
 
 # Usage:
-1. In your app do `require('ractive-components-baron');`
+0. `npm install ractive-component-baron`
+1. In your app do `require('ractive-component-baron');`
    This will add the `Scroll` object to `Ractive.components`.
 2. In your [Ractive](https://github.com/ractivejs/ractive) template:
       ```html
