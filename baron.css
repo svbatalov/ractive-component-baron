@@ -72,9 +72,9 @@
 .baron .scroller__bar {
 	opacity: .5;
 }
-[class^="scroller__bar"]:hover {
-	opacity: 0.8;
-}
 .baron_h .scroller__bar_h {
 	opacity: .6;
+}
+[class^="scroller__bar"]:hover {
+	opacity: 0.8;
 }
