@@ -60,10 +60,10 @@ var Scroll = Ractive.extend({
           self.s = baron(self.opts).baron(hopts);
           break;
         case 'y':
-          self.s = baron(xtend(self.opts), {direction: 'v'});
+          self.s = baron(xtend(self.opts, {direction: 'v'}));
           break;
         case 'x':
-          self.s = baron(xtend(self.opts), {direction: 'h'});
+          self.s = baron(xtend(self.opts, {direction: 'h'}));
           break;
       }
 

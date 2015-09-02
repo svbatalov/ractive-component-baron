@@ -1,6 +1,6 @@
 {
   "name": "ractive-component-baron",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Ractive component wrapping Baron.js scroller library.",
   "main": "index.js",
   "dependencies": {
